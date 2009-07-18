@@ -1,8 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :products
-
   map.resources :makers
   map.resources :suppliers
+  map.resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
 
