@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  supplier: 
+  maker: 
+
+two:
+  name: MyString
+  supplier: 
+  maker: 

@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @maker.name %>
+</p>
+
+<p>
+  <b>Cnpj:</b>
+  <%=h @maker.cnpj %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @maker.address %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @maker.phone %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%=h @maker.contact %>
+</p>
+
+
+<%= link_to 'Edit', edit_maker_path(@maker) %> |
+<%= link_to 'Back', makers_path %>

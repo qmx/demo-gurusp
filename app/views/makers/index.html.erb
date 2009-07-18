@@ -1,0 +1,28 @@
+<h1>Listing makers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Cnpj</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Contact</th>
+  </tr>
+
+<% @makers.each do |maker| %>
+  <tr>
+    <td><%=h maker.name %></td>
+    <td><%=h maker.cnpj %></td>
+    <td><%=h maker.address %></td>
+    <td><%=h maker.phone %></td>
+    <td><%=h maker.contact %></td>
+    <td><%= link_to 'Show', maker %></td>
+    <td><%= link_to 'Edit', edit_maker_path(maker) %></td>
+    <td><%= link_to 'Destroy', maker, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New maker', new_maker_path %>
